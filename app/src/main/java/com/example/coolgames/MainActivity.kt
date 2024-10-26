@@ -16,6 +16,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 //        previousCode()
         code()
+
+        // test commit
     }
 
     /*    private fun previousCode() {
