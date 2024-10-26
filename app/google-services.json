@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "371329039997",
+    "project_id": "coolgamesworkingcopy",
+    "storage_bucket": "coolgamesworkingcopy.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:371329039997:android:3ca7d393ac9200fbd53b14",
+        "android_client_info": {
+          "package_name": "com.example.coolgames"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwcGJPaGDAKEcQLvi-fvfQgizu9Q5yNMQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

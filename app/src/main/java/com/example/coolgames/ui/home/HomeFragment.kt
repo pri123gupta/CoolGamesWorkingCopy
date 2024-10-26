@@ -1,13 +1,15 @@
-package com.example.coolgames.ui.home
+package com.example.coolgamesw.ui.home
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.coolgames.databinding.FragmentHomeBinding
+import com.example.coolgames.ui.home.HomeViewModel
 
 class HomeFragment : Fragment() {
 
@@ -27,7 +29,6 @@ class HomeFragment : Fragment() {
 
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
-
         val textView: TextView = binding.textHome
         homeViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
@@ -38,5 +39,11 @@ class HomeFragment : Fragment() {
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
+    }
+
+    override fun onResume() {
+        super.onResume()
+        // Update ActionBar title if needed
+        (activity as AppCompatActivity).supportActionBar?.title = "Home Fragment"
     }
 }
